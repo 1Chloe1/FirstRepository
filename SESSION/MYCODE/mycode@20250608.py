@@ -3,6 +3,26 @@ import sys
 sys.setrecursionlimit(10000)
 ##################################################################
 
+def isPrime(x):
+    def helper(i):
+        if i * i > x:
+            return True
+        else:
+            if x % i > 0:
+                return helper(i+1)
+            else:
+                return False
+    if x<2:
+      return False
+    else:
+      return helper(2)
+
+print("isPrime(137) = " + str(isPrime(137)))
+print("isPrime(727) = " + str(isPrime(727)))
+print("isPrime(1111) = " + str(isPrime(1111)))
+  
+##################################################################
+
 def hd(xs):
     return xs[0]
 def tl(xs):
@@ -31,15 +51,27 @@ print("reverse(" + str(xs) + ") = " + str(reverse(xs)))
 ##################################################################
 #
 # HX: This one is written by CJX
+# HX: The implementation is tail-recursive
 # HX: Correct but impractical for a long list
 #
 def minusend(xs):
   if nilq(xs):
-    return[]
+    return []
   else:
     return reverse(tl(reverse(xs)))
 
 xs = [1,2,3,4,5]
 print("minusend(" + str(xs) + ") = " + str(minusend(xs)))
+
+#
+# HX: The implementation is not tail-recursive
+#
+def minusend1(xs):
+  if nilq(xs):
+    return []
+  elif len(xs)==1:
+      return []
+  else: # at least 2 elements in xs!
+      return cons(hd(xs), minusend1(tl(xs)))
 
 ##################################################################
