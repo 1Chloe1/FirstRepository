@@ -88,21 +88,6 @@ def last(xs):
 xs = [1,2,3]
 print("last(" + str(xs) + ") = " + str(last(xs)))
 
-# def splitlist(xs,ys):
-#     if nilq(xs):
-#         return ([], [])
-#     else:
-#         if len(xs)==len(ys):
-#             return (xs,ys)
-#         else:
-#             if len(xs)==len(ys)+1:
-#                 return (xs,ys)
-#             else:
-#                 return splitlist(minusend(xs), cons(last(xs),ys))
-#
-# xs = [1,2,3,4,5,6,7,8,9,10,11]
-# print("splitlist(xs, []) = ", str(splitlist(xs, [])))
-
 def list_split(xs):
     n2 = len(xs)//2
     def helper(xs, ys):
@@ -114,6 +99,23 @@ def list_split(xs):
 
 xs = [1,2,3,4,5,6,7,8,9,10,11]
 print("list_split(xs, []) = ", str(list_split(xs)))
+
+# def splitlist(xs,ys):
+#     if nilq(xs):
+#         return ([], [])
+#     else:
+#         if len(xs)==len(ys):
+#             return (xs,ys)
+#         else:
+#             if len(xs)==len(ys)+1:
+#                 return (xs,ys)
+#             else:
+#                 return splitlist(minusend(xs), cons(last(xs),ys))
+
+# xs = [1,2,3,4,5,6,7,8,9,10,11]
+# print("splitlist(xs, []) = ", str(splitlist(xs, [])))
+
+##################################################################
 
 def list_altsplit(xs):
     ln = len(xs)
@@ -127,3 +129,5 @@ def list_altsplit(xs):
 
 xs = [1,2,3,4,5,6,7,8,9,10,11]
 print("list_altsplit(" + str(xs) + ") = ", str(list_altsplit(xs)))
+
+##################################################################
