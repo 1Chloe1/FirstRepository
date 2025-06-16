@@ -102,21 +102,32 @@ print("list_unzip_trec(", xs, ") = ", "(", ys, ";", zs, ")")
 #       else:
 #         return reverse(ys)
 
-def llip_main(xs):
+def llip_xrec(xs):
+    if len(xs) <= 1:
+        return xs
+    ## len(xs) >= 2
+    if hd(xs) <= hd(tl(xs)):
+        return cons(hd(xs), llip_xrec(tl(xs)))
+    else:
+        return [hd(xs)]
+
+xs = [1,2,3,1,3,1,3,1,2,3]
+print("llip_xrec(xs) = ", llip_xrec(xs))
+
+def llip_trec(xs):
     def helper(xs, ys):
         if nilq(xs):
             return reverse(ys)
+        if nilq(ys):
+            return helper(tl(xs), [hd(xs)])
         else:
-            if nilq(ys):
-                return helper(tl(xs), [hd(xs)])
+            if hd(xs) >= hd(ys):
+                return helper(tl(xs), cons(hd(xs), ys))
             else:
-                if hd(xs) >= hd(ys):
-                    return helper(tl(xs), cons(hd(xs), ys))
-                else:
-                    return reverse(ys)
+                return reverse(ys)
     return helper(xs, [])
 
 xs = [1,2,3,1,3,1,3,1,2,3]
-print("llip_main(xs) = ", llip_main(xs))
+print("llip_trec(xs) = ", llip_trec(xs))
 
 ##################################################################
