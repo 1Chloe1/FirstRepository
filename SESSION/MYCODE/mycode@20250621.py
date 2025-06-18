@@ -16,6 +16,14 @@ def consq(xs):
 
 ##################################################################
 
+def append(xs, ys):
+    if nilq(xs):
+        return ys
+    else:
+        return cons(hd(xs), append(tl(xs), ys))
+
+##################################################################
+
 def rappend(xs, ys):
     if nilq(xs):
         return ys
@@ -147,5 +155,23 @@ def llis(xs):
 
 xs = [1,2,3,1,3,1,3,1,2,3]
 print("llis(xs) = ", llis(xs))
+
+##################################################################
+
+def list_cross(xs,ys):
+    if nilq(xs):
+        return []
+    if nilq(ys):
+        return []
+    def helper(x0, ys):
+        if nilq(ys):
+            return []
+        else:
+            return cons((x0, hd(ys)), helper(x0, tl(ys)))
+    return append(helper(hd(xs),ys), list_cross(tl(xs),ys))
+
+xs = [1, 2]
+ys = ["a", "b", "c"]
+print("list_cross(", xs, ",", ys, ") = ", list_cross(xs, ys))
 
 ##################################################################
