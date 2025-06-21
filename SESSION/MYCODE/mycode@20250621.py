@@ -175,3 +175,33 @@ ys = ["a", "b", "c"]
 print("list_cross(", xs, ",", ys, ") = ", list_cross(xs, ys))
 
 ##################################################################
+
+def list_max_prefix_sum(xs):
+    def lmps(xs):
+        if nilq(xs):
+            return 0
+        else:
+            res = hd(xs) + lmps(tl(xs))
+            return 0 if res <= 0 else res
+    return lmps(xs)
+
+xs = [5, -1, 5, -1, -2]
+print("list_max_prefix_sum(", xs, ") = ", list_max_prefix_sum(xs))
+
+##################################################################
+
+def list_max_sublist_sum(xs):
+    def lmss(xs):
+        if nilq(xs):
+            return 0
+        else:
+            res1 = lmss(tl(xs))
+            res2 = hd(xs)+ list_max_prefix_sum(tl(xs))
+            return res1 if res1 >= res2 else res2
+    return lmss(xs)
+  
+xs = [-5, 5, -1, 5, -1, -2]
+print("list_max_sublist_sum(", xs, ") = ", list_max_sublist_sum(xs))
+
+##################################################################
+
