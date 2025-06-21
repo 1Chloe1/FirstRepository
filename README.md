@@ -34,9 +34,18 @@ The type for characters is `char`.
 
 ### Strings (or Strns)
 
-A string is a sequence of characters. The type for strings is `string` or
-`strn` (as a shorthand).
+A string is a sequence of characters. For instance, "Chloe" and "Xi"
+are two strings. The type for strings is `string` or `strn` (as a
+shorthand).
 
 ### Built-in Functions
 
 We have some built-in functions defined ints, bools, chars, and strns.
+
+<!--
+How can one define integer maximum in terms of integer negation and
+integer minimum?
+
+def int_max(x, y):
+  return -int_min(-x, -y)
+-->
