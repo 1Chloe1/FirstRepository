@@ -4,7 +4,7 @@
 
 A collection of sessions of Chloe J. Xi learning programming
 
-## Baisic Programming Concepts
+## Basic Programming Concepts
 
 Functional programming originates from Alonzo Church's
 lambda-calculus, which is a computational model based on
@@ -23,14 +23,14 @@ we use `sint` for `int` to emphasize that the integers are signed.
 
 ### Booleans (or Bools)
 
-There are two boolean values: true and false. The type for these two
+There are two boolean values: `true` and `false`. The type for these two
 values is `bool`.
 
 ### Characters (or Chars)
 
-Characters are essentially small integers.
-For instance, the character `'a'` refers to its ascii code 97.
-The type for characters is `char`.
+Characters are essentially small integers.  For instance, the
+character `'a'` refers to its ascii (american standard code for
+information interchange) code 97.  The type for characters is `char`.
 
 ### Strings (or Strns)
 
@@ -40,7 +40,8 @@ shorthand).
 
 ### Built-in Functions
 
-We have some built-in functions defined ints, bools, chars, and strns.
+We have some built-in functions defined on ints, bools, chars, and
+strns.
 
 <!--
 How can one define integer maximum in terms of integer negation and
@@ -48,4 +49,13 @@ integer minimum?
 
 def int_max(x, y):
   return -int_min(-x, -y)
+-->
+
+#### Arithmetic operations
+
+- Integer addition `+`: (`int`, `int`) -> `int`
+- Integer subtraction `-`: (`int`, `int`) -> `int`
+
+<!--
+########################(end-of-[README.md])########################
 -->
