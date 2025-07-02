@@ -85,6 +85,12 @@ def int_max(x, y):
 - Integer greater-than-or-equal-to `>=`: (`int`, `int`) -> `bool`
 - Integer comparison `intcmp`: (`int`, `int`) -> `int`
 
+#### Various String functions
+
+- String length `strlen`: (`strn`) -> `int`
+- String subscript `strsub`: (`strn`, `int`) -> `char`
+- String comparison `strcmp`: (`strn`, `strn`) -> `int`
+
 <!--
 ########################(end-of-[README.md])########################
 -->
