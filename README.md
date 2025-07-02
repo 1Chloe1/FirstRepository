@@ -58,12 +58,22 @@ def int_max(x, y):
 - Integer multiplication `-`: (`int`, `int`) -> `int`
 - Integer division `*`: (`int`, `int`) -> `int`
 - Integer modulo `%`: (`int`, `int`) -> `int`
--->
 
 #### Boolean operations
-- Boolean negation `~`: (`bool`, `bool`) -> `bool`
-- Boolean conjunction `∧`: (`bool`, `bool`) -> `bool`
-- Boolean disjunction `∨`: (`bool`, `bool`) -> `bool`
+
+- Boolean negation `not`: (`bool`, `bool`) -> `bool`
+- Boolean disjunction `or`: (`bool`, `bool`) -> `bool`
+- Boolean conjunction `and`: (`bool`, `bool`) -> `bool`
+
+#### Integer Comparisons
+
+- Integer equal-to `=`: (`int`, `int`) -> `bool`
+- Integer less-than `<`: (`int`, `int`) -> `bool`
+- Integer greater-than `>`: (`int`, `int`) -> `bool`
+- Integer not-equal-to `!=`: (`int`, `int`) -> `bool`
+- Integer less-than-or-equal-to `<=`: (`int`, `int`) -> `bool`
+- Integer greater-than-or-equal-to `>=`: (`int`, `int`) -> `bool`
+
 <!--
 ########################(end-of-[README.md])########################
 -->
