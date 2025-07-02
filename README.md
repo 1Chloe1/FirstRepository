@@ -61,19 +61,19 @@ def int_max(x, y):
 - Character decode: `chr`: (`int`) -> `char`
 - Character encode: `ord`: (`char`) -> `int`
 
+#### Arithmetic operations
+
+- Integer addition `+`: (`int`, `int`) -> `int`
+- Integer subtraction `-`: (`int`, `int`) -> `int`
+- Integer multiplication `*`: (`int`, `int`) -> `int`
+- Integer division `/`: (`int`, `int`) -> `int`
+- Integer modulo `%`: (`int`, `int`) -> `int`
+
 #### Logic operations
 
 - Boolean negation `not`: (`bool`, `bool`) -> `bool`
 - Boolean disjunction `or`: (`bool`, `bool`) -> `bool`
 - Boolean conjunction `and`: (`bool`, `bool`) -> `bool`
-
-#### Arithmetic operations
-
-- Integer addition `+`: (`int`, `int`) -> `int`
-- Integer subtraction `-`: (`int`, `int`) -> `int`
-- Integer multiplication `-`: (`int`, `int`) -> `int`
-- Integer division `*`: (`int`, `int`) -> `int`
-- Integer modulo `%`: (`int`, `int`) -> `int`
 
 #### Integer Comparisons
 
