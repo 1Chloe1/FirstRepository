@@ -61,7 +61,7 @@ def int_max(x, y):
 -->
 
 #### Boolean operations
-- Boolean negation ``: (`bool`, `bool`) -> `bool`
+- Boolean negation `~`: (`bool`, `bool`) -> `bool`
 - Boolean conjunction `∧`: (`bool`, `bool`) -> `bool`
 - Boolean disjunction `∨`: (`bool`, `bool`) -> `bool`
 <!--
