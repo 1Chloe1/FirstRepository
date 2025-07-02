@@ -51,6 +51,22 @@ def int_max(x, y):
   return -int_min(-x, -y)
 -->
 
+#### Boolean coding:
+
+- Boolean decode: `i2b`: (`int`) -> `bool`
+- Boolean encode: `b2i`: (`bool`) -> `int`
+
+#### Character coding:
+
+- Character decode: `chr`: (`int`) -> `char`
+- Character encode: `ord`: (`char`) -> `int`
+
+#### Logic operations
+
+- Boolean negation `not`: (`bool`, `bool`) -> `bool`
+- Boolean disjunction `or`: (`bool`, `bool`) -> `bool`
+- Boolean conjunction `and`: (`bool`, `bool`) -> `bool`
+
 #### Arithmetic operations
 
 - Integer addition `+`: (`int`, `int`) -> `int`
@@ -58,12 +74,6 @@ def int_max(x, y):
 - Integer multiplication `-`: (`int`, `int`) -> `int`
 - Integer division `*`: (`int`, `int`) -> `int`
 - Integer modulo `%`: (`int`, `int`) -> `int`
-
-#### Boolean operations
-
-- Boolean negation `not`: (`bool`, `bool`) -> `bool`
-- Boolean disjunction `or`: (`bool`, `bool`) -> `bool`
-- Boolean conjunction `and`: (`bool`, `bool`) -> `bool`
 
 #### Integer Comparisons
 
@@ -73,6 +83,7 @@ def int_max(x, y):
 - Integer not-equal-to `!=`: (`int`, `int`) -> `bool`
 - Integer less-than-or-equal-to `<=`: (`int`, `int`) -> `bool`
 - Integer greater-than-or-equal-to `>=`: (`int`, `int`) -> `bool`
+- Integer comparison `intcmp`: (`int`, `int`) -> `int`
 
 <!--
 ########################(end-of-[README.md])########################
