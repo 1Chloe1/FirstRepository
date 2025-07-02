@@ -56,9 +56,14 @@ def int_max(x, y):
 - Integer addition `+`: (`int`, `int`) -> `int`
 - Integer subtraction `-`: (`int`, `int`) -> `int`
 - Integer multiplication `-`: (`int`, `int`) -> `int`
-- Integer division `-`: (`int`, `int`) -> `int`
-- Integer modulo `-`: (`int`, `int`) -> `int`
+- Integer division `*`: (`int`, `int`) -> `int`
+- Integer modulo `%`: (`int`, `int`) -> `int`
+-->
 
+#### Boolean operations
+- Boolean negation ``: (`bool`, `bool`) -> `bool`
+- Boolean conjunction `∧`: (`bool`, `bool`) -> `bool`
+- Boolean disjunction `∨`: (`bool`, `bool`) -> `bool`
 <!--
 ########################(end-of-[README.md])########################
 -->
